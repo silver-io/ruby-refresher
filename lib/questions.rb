@@ -5,3 +5,8 @@ end
 def select_elements_starting_with_vowel(names)
     names.select {|vowels| ['a', 'e', 'i', 'o', 'u'].include?(vowels[0])}
 end
+
+def remove_nils_from_array(letters)
+    letters.compact
+end
+
