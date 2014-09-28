@@ -10,3 +10,7 @@ def remove_nils_from_array(letters)
     letters.compact
 end
 
+def remove_nils_and_false_from_array(animals)
+    animals.compact.delete_if {|element| element == false}
+end
+
