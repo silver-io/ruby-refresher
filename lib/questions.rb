@@ -14,3 +14,8 @@ def remove_nils_and_false_from_array(animals)
     animals.compact.delete_if {|element| element == false}
 end
 
+def reverse_every_element_in_array(array)
+  array.map { |x| x.reverse }
+end
+
+
