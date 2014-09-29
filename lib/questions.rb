@@ -18,4 +18,8 @@ def reverse_every_element_in_array(array)
   array.map { |x| x.reverse }
 end
 
+def every_possible_pairing_of_students(students)
+  students.combination(2)
+end
+
 
