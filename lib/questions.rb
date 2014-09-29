@@ -15,11 +15,18 @@ def remove_nils_and_false_from_array(animals)
 end
 
 def reverse_every_element_in_array(array)
-  array.map { |x| x.reverse }
+    array.map { |x| x.reverse }
 end
 
 def every_possible_pairing_of_students(students)
-  students.combination(2)
+    students.combination(2)
 end
+
+def all_elements_except_first_3(array)
+    array.drop(3)
+end
+
+
+
 
 
