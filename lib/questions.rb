@@ -42,6 +42,22 @@ def make_numbers_negative(number)
     number.abs * -1
 end
 
+def separate_array_into_even_and_odd_numbers(array)
+    even = array.select {|x| x % 2 == 0},
+    odd  = array.select {|x| x % 2 != 0}
+end
+
+def number_of_elements_that_are_palindromes(array)
+    array.select {|x| x.reverse == x}.count
+end
+
+def shorter_word_in_array(array)
+    
+end
+
+
+
+
 
 
 
