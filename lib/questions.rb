@@ -67,6 +67,11 @@ def double_array(array)
     array * 2
 end
 
+def turn_symbol_into_string(symbol)
+    symbol.to_s
+end
+
+
 
 
 
