@@ -52,8 +52,17 @@ def number_of_elements_that_are_palindromes(array)
 end
 
 def shorter_word_in_array(array)
-    
+    # array.sort_by.length.first
 end
+
+def longest_word_in_array(array)
+
+end
+
+def total_of_array(array)
+    array.reduce(:+)
+end
+
 
 
 
