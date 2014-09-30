@@ -63,6 +63,13 @@ def total_of_array(array)
     array.reduce(:+)
 end
 
+def double_array(array)
+    array * 2
+end
+
+
+
+
 
 
 
