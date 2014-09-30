@@ -71,6 +71,41 @@ def turn_symbol_into_string(symbol)
     symbol.to_s
 end
 
+def average_of_array(array)
+   
+end
+
+def get_elements_until_greater_than_five(array)
+    array.take_while { |x| x <= 5 }
+
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
