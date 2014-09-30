@@ -30,9 +30,19 @@ def add_element_to_beginning_of_array(array, element)
     array.unshift(element)
 end
 
-# def array_sort_by_last_letter_of_word(array)
-#     array.sort_by {|string| string.reverse }
-# end
+def array_sort_by_last_letter_of_word(array)
+    array.sort_by {|string| string.reverse }
+end
+
+def get_first_half_of_string(string)
+
+end
+
+def make_numbers_negative(number)
+    number.abs * -1
+end
+
+
 
 
 
