@@ -55,7 +55,7 @@ describe 'the Friday test :)' do
     expect(n).to eq ['puma', 'maker', 'sky']
   end
 
-  xspecify 'get_first_half_of_string' do
+  specify 'get_first_half_of_string' do
     a = get_first_half_of_string 'banana'
     b = get_first_half_of_string 'apple'
 
@@ -106,7 +106,7 @@ describe 'the Friday test :)' do
     expect(n).to eq 'foobar'
   end
 
-  xspecify 'average_of_array' do
+  specify 'average_of_array' do
     n = average_of_array [10, 15, 25]
     expect(n).to eq 17
   end
@@ -121,7 +121,7 @@ describe 'the Friday test :)' do
     expect(n).to eq({'a' => 'b', 'c' => 'd'})
   end
 
-  specify 'get_all_letters_in_array_of_words' do
+  xspecify 'get_all_letters_in_array_of_words' do
     n = get_all_letters_in_array_of_words ['cat', 'dog', 'fish']
     expect(n).to eq ['a', 'c', 'd', 'f', 'g', 'h', 'i', 'o', 's', 't']
   end

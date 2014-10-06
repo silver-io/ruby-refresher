@@ -11,7 +11,7 @@ def remove_nils_from_array(letters)
 end
 
 def remove_nils_and_false_from_array(animals)
-    animals.compact.delete_if {|element| element == false}
+    animals.select {|element|element}
 end
 
 def reverse_every_element_in_array(array)
@@ -35,7 +35,7 @@ def array_sort_by_last_letter_of_word(array)
 end
 
 def get_first_half_of_string(string)
-
+string.slice(0, (string.length.to_f / 2).round )
 end
 
 def make_numbers_negative(number)
@@ -43,8 +43,7 @@ def make_numbers_negative(number)
 end
 
 def separate_array_into_even_and_odd_numbers(array)
-    even = array.select {|x| x % 2 == 0},
-    odd  = array.select {|x| x % 2 != 0}
+    [array.select {|x| x.even?},array.select {|x| x.odd?}]
 end
 
 def number_of_elements_that_are_palindromes(array)
@@ -72,13 +71,33 @@ def turn_symbol_into_string(symbol)
 end
 
 def average_of_array(array)
-   
+   # (array.inject(0){|sum, x| sum + x} / array.count.to_f).ceil
+      (array.inject(:+) / array.count.to_f).ceil
+
 end
 
 def get_elements_until_greater_than_five(array)
     array.take_while { |x| x <= 5 }
 
 end
+
+def convert_array_to_a_hash(array)
+    Hash[*array]
+end
+
+def get_all_letters_in_array_of_words(array)
+  # array.join.split(//).uniq.sort
+end
+
+def swap_keys_and_values_in_a_hash(hash)
+    hash.invert
+end
+
+def add_together_keys_and_values(hash)
+end
+
+
+
 
 
 
