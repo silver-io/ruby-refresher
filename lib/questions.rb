@@ -94,8 +94,33 @@ def swap_keys_and_values_in_a_hash(hash)
 end
 
 def add_together_keys_and_values(hash)
-  hash.flatten
+    hash.flatten.inject(:+)
 end
+
+def remove_capital_letters_from_string(string)
+    string.gsub(/[A-Z]/, "")
+end
+
+def round_up_number(number)
+    number.ceil
+end
+
+def round_down_number(number)
+    number.floor
+end
+
+def format_date_nicely(date)
+    date.strftime("%d/%m/%Y")
+end
+
+def get_domain_name_from_email_address
+end
+
+
+
+
+
+
 
 
 
