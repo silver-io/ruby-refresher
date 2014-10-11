@@ -114,6 +114,7 @@ def format_date_nicely(date)
 end
 
 def get_domain_name_from_email_address
+
 end
 
 
