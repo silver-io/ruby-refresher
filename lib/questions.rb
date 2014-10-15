@@ -113,8 +113,8 @@ def format_date_nicely(date)
     date.strftime("%d/%m/%Y")
 end
 
-def get_domain_name_from_email_address
-
+def get_domain_name_from_email_address(email)
+    email[/@(\w+)/,1]
 end
 
 
