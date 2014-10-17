@@ -117,6 +117,15 @@ def get_domain_name_from_email_address(email)
     email[/@(\w+)/,1]
 end
 
+def titleize_a_string(string)
+string.split.inject([]) { |words, w|
+    words << (%w(a and the).include?(w) && words.any? ? w : w.capitalize)
+  }.join(' ')
+end
+
+
+
+
 
 
 
