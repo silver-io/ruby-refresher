@@ -123,6 +123,16 @@ string.split.inject([]) { |words, w|
   }.join(' ')
 end
 
+def check_a_string_for_special_characters(string)
+
+end
+
+def get_upper_limit_of(number)
+    number.end
+end
+
+
+
 
 
 
