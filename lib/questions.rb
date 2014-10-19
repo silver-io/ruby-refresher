@@ -128,7 +128,8 @@ def check_a_string_for_special_characters(string)
 end
 
 def get_upper_limit_of(number)
-    number.end
+    number = get_upper_limit_of 1..20
+    expect(n).to eq 20
 end
 
 
